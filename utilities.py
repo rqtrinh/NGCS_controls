@@ -110,6 +110,9 @@ def Inputs(mode, manual, running):
                         data['Controls'][0]['RIGHT'] = analog_keys[0]
                     else:
                         data['Controls'][0]['RIGHT'] = 0
+        #update json file
+        with open("data.json", "w") as write_file: 
+            json.dump(data,write_file)
         # close if not running
         if (running == False):
             pygame.display.quit()

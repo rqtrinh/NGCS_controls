@@ -11,6 +11,3 @@ if __name__ == '__main__':
     Initialize_Controller() #set controller buttons
     while running: #while loop to take inputs 
         Inputs(mode, manual, running) #call inputs method
-        #update json file
-        with open("data.json", "w") as write_file: 
-            json.dump(data,write_file)
