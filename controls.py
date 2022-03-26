@@ -1,6 +1,8 @@
 #import necessary libraries
 from utilities import *
 
+#to make the json file look more manageable, do Shift+Alt+F
+
 if __name__ == '__main__':
     #Initialize_Variables()
     pygame.init() #initialize pygame
